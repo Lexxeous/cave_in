@@ -7,21 +7,21 @@
 
  /*
  Pseudocode:
- 
+
  1. Write all code for "r0c0" function.
  2. Write all code for "r0c1" function.
  3. Write all code for "r0c2" function.
  ...
  n. Write all code for "rXcX" function.
- 
+
  */
- 
+
  /*
  Make sure to check that all syntax (punctuation, spacing, capitalization, etc...) is
  correct, or not.
- 
+
  Make sure that the user's view of the program is easy to read, understand, and operate.
-*/ 
+*/
 
 //include necessary libraries
 #include "command.h"
@@ -29,65 +29,66 @@
 //specify namespace
 using namespace std;
 
-    string command,
-           heroName,
-           friend1,
-           friend2,
-           friend3;
-           
-        //tools
-    bool shovel = 0, //"Holes" is a great movie...hope i dont cut my hand open on this thing...
-        pickaxe = 0, //im gunna "minecraft" the shit outta this cave...
-        flashlight = 0, //wow...a useless fact that i know just became relevant, this is a "dyno torch". they were used by soldiers in WWII. they store energy for the bulb with a flywheel on the inside.
-        battery = 0, //how the hell would this battery work after being in a cave this long, i hope this doesnt create a plot-hole...
-        plasticShell = 0, //lets see if the battery works in this old flashlight shell...nope...that's what i thought...
-        crowbar = 0, //dang this thing is heavy..really hope i dont accidentally drop this on my toe...
-        lighter = 0, //i used to light my hand on fire when i was a kid playing witha lighter, germ-x, and axe body spray...dont judge me...
-        stickOfTNT = 0, //this will make a fantastic story...looks like i might HAVE to play with fire now...take that mom...pyrotechnics might save my life.
-        largePlank = 0, //huge wood inside a cave...there's a dirty joke there somewhere...
-        WD40 = 0, //wd-40 was invented in 1953
-        rustyKey = 0, //i remember learning about oxidation in school...just like mitochondria and the quadratic formula...amazing all the useless things i know...
-        rope = 0, //damn...this thing is pretty long...that's what she said...
-        hook = 0, //Arrgghhh matey...ye must walk the plank!!!
-        grapple = 0, //now i can latch onto things...like a spy or something...
-        
-        //relics
-        starCoin = 0, //
-        bloodDiamond = 0,
-        sacrificialDagger = 0,
-        
-        //obstacles
-        pileOfSand = 1, //plz no yellow spotted lizards....plz no yellow spotted lizards; they dont actually exist tho lol
-        pileOfDirt = 1, //ahhhh!!! its a snake!!! shit!!! NO!!!...NO...No...no...no...its a rope; i got scared of a rope...awesome...
-        r0c2PileOfRocks = 0,
-        r0c3PileOfRocks = 0,
-        r6c0weakWall = 0,
-        r7c11weakWall = 0,
-        stream = 0,
-        moss = 0,
-        gunpowderBarrels = 0,
-        gasBarrels = 0,
-        mineCarts = 0,
-        giantDrill = 0,
-        altarRoom = 0,
-        cultistBook = 0,
-        cultistNote = 0,
-        minersNote = 0,
-        minerNote = 0,
-        
-        //friends
-        foundFriend1 = 0, //i got scared, i saw this door open and figured it would be safe inside...but after i "closed" it...it wouldnt open...luck right???
-        foundFriend2 = 0, //there you are...you jerk...nah...ill still like you when we get outta here...
-        foundFriend3 = 0; //woah...youre really in a pickle...actually youre in a hole bu-; shut up and get me outta here you idiot!!; 
-        
-        
-        
- 
+string
+//strings
+command,
+heroName,
+friend1,
+friend2,
+friend3;
+
+bool
+//tools
+shovel = 0, //"Holes" is a great movie...hope i dont cut my hand open on this thing...
+pickaxe = 0, //im gunna "minecraft" the shit outta this cave...
+flashlight = 0, //wow...a useless fact that i know just became relevant, this is a "dyno torch". they were used by soldiers in WWII. they store energy for the bulb with a flywheel on the inside.
+battery = 0, //how the hell would this battery work after being in a cave this long, i hope this doesnt create a plot-hole...
+plasticShell = 0, //lets see if the battery works in this old flashlight shell...nope...that's what i thought...
+crowbar = 0, //dang this thing is heavy..really hope i dont accidentally drop this on my toe...
+lighter = 0, //i used to light my hand on fire when i was a kid playing witha lighter, germ-x, and axe body spray...dont judge me...
+stickOfTNT = 0, //this will make a fantastic story...looks like i might HAVE to play with fire now...take that mom...pyrotechnics might save my life.
+largePlank = 0, //huge wood inside a cave...there's a dirty joke there somewhere...
+WD40 = 0, //wd-40 was invented in 1953
+rustyKey = 0, //i remember learning about oxidation in school...just like mitochondria and the quadratic formula...amazing all the useless things i know...
+rope = 0, //damn...this thing is pretty long...that's what she said...
+hook = 0, //Arrgghhh matey...ye must walk the plank!!!
+grapple = 0, //now i can latch onto things...like a spy or something...
+
+//relics
+starCoin = 0, //
+bloodDiamond = 0,
+sacrificialDagger = 0,
+
+//obstacles
+pileOfSand = 1, //plz no yellow spotted lizards....plz no yellow spotted lizards; they dont actually exist tho lol
+pileOfDirt = 1, //ahhhh!!! its a snake!!! shit!!! NO!!!...NO...No...no...no...its a rope; i got scared of a rope...awesome...
+r0c2PileOfRocks = 0,
+r0c3PileOfRocks = 0,
+r6c0weakWall = 0,
+r7c11weakWall = 0,
+stream = 0,
+moss = 0,
+gunpowderBarrels = 0,
+gasBarrels = 0,
+mineCarts = 0,
+giantDrill = 0,
+altarRoom = 0,
+cultistBook = 0,
+cultistNote = 0,
+minersNote = 0,
+minerNote = 0,
+
+//friends
+foundFriend1 = 0, //i got scared, i saw this door open and figured it would be safe inside...but after i "closed" it...it wouldnt open...luck right???
+foundFriend2 = 0, //there you are...you jerk...nah...ill still like you when we get outta here...
+foundFriend3 = 0; //woah...youre really in a pickle...actually youre in a hole bu-; shut up and get me outta here you idiot!!;
+
+
 //define functions
 void HELP()
 {
     int userChoice;
-    
+
     cout << endl; //for spacing
     cout << "Guidance Menu:" << endl;
     cout << "1. Command List" << endl;
@@ -95,18 +96,18 @@ void HELP()
     cout << "3. Inventory" << endl;
     cout << "4. Friends List" << endl;
     cout << "5. Objective" << endl;
-    cout << "6. Grid Map" << endl;
+    cout << "6. World Map" << endl;
     cout << "7. Exit Menu" << endl;
     cout << "What do you need HELP with?" << endl;
     cin >> userChoice;
     cout << endl; //for spacing
-    
+
     switch(userChoice)
     {
         case 1:
             cout << "'HELP' - Shows the Guidence Menu." << endl;
             cout << "'INVENTORY' - Shows all the items currently on your person." << endl;
-            cout << "'MAP' - Shows the grid map." << endl;
+            cout << "'MAP' - Shows the world map." << endl;
             cout << "'SEARCH' - Searches the current room for any important items or knowledge." << endl;
             cout << "'USE' - Use an item of your choice to potentially perform a task in a room." << endl;
             cout << "'NORTH' - Travel north." << endl;
@@ -118,7 +119,7 @@ void HELP()
         case 2:
             cout << "1. Shovel" << endl;
             cout << "2. Pickaxe" << endl;
-            cout << "3. Flashlight" << endl;
+            cout << "3. Crank Flashlight" << endl;
             cout << "4. Battery" << endl;
             cout << "5. Plastic Shell" << endl;
             cout << "6. Crowbar" << endl;
@@ -144,14 +145,15 @@ void HELP()
         case 5:
             cout << "Your goal is to traverse the cavern maze, find all your friends, and not"
                  << " be lost forever." << endl;
-            cout << "**There are a few secrets (Easter Eggs) along the way...see if you can"
-                 << " find all of them!!!" << endl;
+            cout << "**There are a few secrets (Easter Eggs) along the way... see if you can"
+                 << " find them all..." << endl;
+            cout << endl; // for spacing
             break;
         case 6:
             MAP();
             break;
         case 7:
-            cout << "Good Luck!!!" << endl;
+            cout << "Good luck!" << endl;
             cout << endl; //for spacing
             break;
         default:
@@ -168,11 +170,11 @@ void INVENTORY()
     string invStringArray[] = {"Shovel", "Pickaxe", "Flashlight", "Battery", "Plastic Shell", "Crowbar", "Lighter", "Stick of TNT", "Large Plank", "WD-40", "Rusty Key", "Rope", "Hook", "Grapple", "Star Coin", "Blood Diamond", "Sacrificial Dagger"};
     cout << endl; //for spacing
     cout << "Here's what " << heroName << " has with them:" << endl;
-    
+
     for(int i = 0; i < invSize; i++)
     {
        if(invArray[i] == true) //found this item
-       {    
+       {
             cout << i << ". " << invStringArray[i] << endl; //print the item
        }
        else if(invArray[i] == false) //havent found this item
@@ -190,7 +192,7 @@ void FRIENDS()
     string friendArray[] = {friend1, friend2, friend3}; //names of friends
     cout << endl; //for spacing
     cout << heroName << " has rescued:" << endl;
-    
+
     for(int i = 0; i < 3; i++)
     {
         if(foundFriendArray[i] == true) //found this friend
@@ -211,16 +213,16 @@ void MAP()
     cout << endl; //for spacing
     cout << "WORLD MAP:_______________________________________________________________________________________" << endl;
     cout << "     |__00__|__01__|__02__|__03__|__04__|__05__|__06__|__07__|__08__|__09__|__10__|__11__|__12__|" << endl;
-    cout << "  00 |      |      |      |      |      |      |      |      |######|      |      |      |      |" << endl;
+    cout << "  00 |      |      |      |      |      |      |      |      |##### |      |      |      | Exit |" << endl;
     cout << "     |______|______|______|______|______|______|______|______|######|______|______|______|______|" << endl;
     cout << "  01 |      |      |Spawn |      |      |      |      |      |  ##  |      |      |      |      |" << endl;
     cout << "     |______|______|Point_|______|______|______|______|______|  ##  |______|______|______|______|" << endl;
     cout << "  02 |      |      |      |      |      |      |      |      |######|      |      |      |      |" << endl;
     cout << "     |______|______|______|______|______|______|______|______|######|______|______|______|______|" << endl;
-    cout << "  03 |      |      |      |      |      |      |      |    ==ıı=ıı  |      |      |      |      |" << endl;
-    cout << "     |______|______|______|______|______|______|______|____==|ıı ıı_|______|______|______|______|" << endl;
-    cout << "  04 |      |      |      |      |      |      |      |      | ıı ıı|==    |      |      |      |" << endl;
-    cout << "     |______|______|______|______|______|______|______|______|__ıı=ıı==____|______|______|______|" << endl;
+    cout << "  03 |      |      |      |      |      |      |      |    ==ıı=ıı##|      |      |      |      |" << endl;
+    cout << "     |______|______|______|______|______|______|______|____==|ıı=ıı#|______|______|______|______|" << endl;
+    cout << "  04 |      |      |      |      |      |      |      |      |#ıı=ıı|==    |      |      |      |" << endl;
+    cout << "     |______|______|______|______|______|______|______|______|##ıı=ıı==____|______|______|______|" << endl;
     cout << "  05 |      |      |      |      |      |      |      |      |######|      |      |      |      |" << endl;
     cout << "     |______|______|______|______|______|______|______|______|######|______|______|______|______|" << endl;
     cout << "  06 |      |      |      |      |      |      |      |      |######|      |      |      |      |" << endl;
@@ -262,11 +264,11 @@ void CULTISTBOOK()
     cout << "|                    \\   \\ /   /                    |" << endl;
     cout << "|                       \\ V /                   1.  |" << endl; //may you bring death to my enemies; destruction to the non-believers.
     cout << "|__________________________________________/\\_______|" << endl; //may the Beast in me please You oh great leviathan who came before me
-    
+
     cout << "Press ENTER to continue..." << endl; //pause
     getchar();
     getchar();
-    
+
     cout << " ___________________________________________________ " << endl;
     cout << "|          /57                                      |" << endl;
     cout << "|         /                                         |" << endl;
@@ -295,10 +297,10 @@ void CULTISTBOOK()
     cout << "|                    \\   \\ /   /                    |" << endl;
     cout << "|  16.                  \\ V /                       |" << endl;
     cout << "|_____________/\\____________________________________|" << endl; //left side of book
-    
+
     cout << "Press ENTER to continue..." << endl; //pause
     getchar();
-    
+
     cout << " ___________________________________________________ " << endl;
     cout << "|          /57                                      |" << endl;
     cout << "|         /                                         |" << endl;
@@ -327,10 +329,10 @@ void CULTISTBOOK()
     cout << "|                    \\   \\ /   /                    |" << endl;
     cout << "|  20.                  \\ V /                       |" << endl;
     cout << "|_____________/\\____________________________________|" << endl; //left side of book
-    
+
     cout << "Press ENTER to continue..." << endl; //pause
     getchar();
-    
+
     cout << " ___________________________________________________ " << endl;
     cout << "|        /1958                                      |" << endl;
     cout << "|       /                                           |" << endl;
@@ -347,7 +349,7 @@ void CULTISTBOOK()
     cout << "|                                                   |" << endl;
     cout << "|                                                   |" << endl;
     cout << "|                                                   |" << endl;
-    cout << "|                                                   |" << endl; 
+    cout << "|                                                   |" << endl;
     cout << "|                   _____________                   |" << endl;
     cout << "|                  /\\ \\       / /\\                  |" << endl;
     cout << "|                 /  \\   \\ /   /  \\                 |" << endl;
@@ -359,10 +361,10 @@ void CULTISTBOOK()
     cout << "|                    \\   \\ /   /                    |" << endl;
     cout << "|  28.                  \\ V /                       |" << endl;
     cout << "|_____/\\____________________________________________|" << endl; //left side of book
-    
+
     cout << "Press ENTER to continue..." << endl; //pause
     getchar();
-    
+
     cout << " ___________________________________________________ " << endl;
     cout << "| August 4, 1958                          \\         |" << endl;
     cout << "|                                          \\        |" << endl;
@@ -391,10 +393,10 @@ void CULTISTBOOK()
     cout << "|                    \\   \\ /   /                    |" << endl;
     cout << "|                       \\ V /                  35.  |" << endl;
     cout << "|_________________________________________________/\\|" << endl; //right side of book
-    
+
     cout << "Press ENTER to continue..." << endl; //pause
     getchar();
-    
+
     cout << " ____________________________________________        " << endl;
     cout << "| March 29, 1960                            |        " << endl;
     cout << "|                                            \\       " << endl;
@@ -423,7 +425,7 @@ void CULTISTBOOK()
     cout << "|                    \\   \\ /   /                    |" << endl;
     cout << "|                       \\ V /                  66.  |" << endl;
     cout << "|___________________________________________________|" << endl;
-    
+
     cout << "Press ENTER to continue..." << endl; //pause
     getchar();
 }
@@ -446,7 +448,7 @@ void CULTISTNOTE()
     cout << "|                                             \\____  " << endl;
     cout << "|                                                  \\ " << endl;
     cout << "|                                                   |" << endl;
-    cout << "|                                                   |" << endl;    
+    cout << "|                                                   |" << endl;
     cout << "|                   _____________                   |" << endl;
     cout << "|                  /\\ \\       / /\\                  |" << endl;
     cout << "|                 /  \\   \\ /   /  \\                 |" << endl;
@@ -496,9 +498,9 @@ void MINERNOTE()
 
 void MINERSNOTE()
 {
-    cout << " ___________________________________________________ " << endl; //something about jones' witness story 
+    cout << " ___________________________________________________ " << endl; //something about jones' witness story
     cout << "| March 24, 1960                                    |" << endl; //them not knowing what to do and then taking action by stealing the dagger
-    cout << "|                                                   |" << endl; 
+    cout << "|                                                   |" << endl;
     cout << "|                                                   |" << endl;
     cout << "|                                                   |" << endl;
     cout << "|                                                   |" << endl;
@@ -523,16 +525,16 @@ void MINERSNOTE()
     cout << "|                                                   |" << endl;
     cout << "|                                                   |" << endl;
     cout << "|                                                   |" << endl;
-    cout << "|___________________________________________________|" << endl;  
+    cout << "|___________________________________________________|" << endl;
 }
 
 
 void intro()
 {
-    cout << heroName << " -- 'Oooohhh...my...h-head. I must have hit it on a rock on the way down...Gggahhh..."
+    cout << heroName << " -- 'Oooohhh... my... h-head. I must have hit it on a rock on the way down... Gggahhh..."
         << " W-well, at least I didn't break anything...b-but how the hell am I gunna get outta here?!"
-        << " I gotta...aahhh...find my f-friends!!!"
-        << " Looks like some of these crude electric lamps are s-still functinal...*sigh*...let's see"
+        << " I gotta... aahhh... find my f-friends!!!"
+        << " Looks like some of these old, crude electric lamps are s-still functinal...*sigh*...let's see"
         << " if I can find anything useful in this crap-hole...'" << endl;
     cout << "Press ENTER to continue..." << endl;
     getchar(); //pause
@@ -540,7 +542,7 @@ void intro()
     cout << "Press ENTER to continue..." << endl;
     getchar(); //pause
     cout << "Enter a command to begin " << heroName << "'s journey." << endl;
-    
+
     cin >> command;
     if(command  == "altar")
     {
@@ -582,7 +584,7 @@ void intro()
         }
         cout << "There is nothing useful in this room." << endl;
         cout << endl; //for spacing
-        r1c2(); //spawn point 
+        r1c2(); //spawn point
     }
     else if(command == "Use" || command == "USE" || command == "use")
     {
@@ -611,10 +613,10 @@ void intro()
     }
     else
     {
-        cout << "Invalid command." << endl;
+        cout << "Invalid command. Type 'HELP' for more information." << endl;
         r1c2();
     }
-    
+
 }
 
 
@@ -646,7 +648,7 @@ void r0c0()
             cout << "There are a buncha old books and tomes; some of them are ripped, singed, or blood-stained...or all 3..." << endl;
             cout << "There's also a crude wooden...altar it seems...there are straps along the sides...and the top looks like a \"nice\" place to lay down...'" << endl;
             cout << endl; //for spacing
-            
+
             cout << "You see a large gemstone covered in blood. Do you want to take it? (YES/NO)" << endl;
             cin >> response;
             if(response == "Yes" || response == "YES" || response == "yes")
@@ -662,7 +664,7 @@ void r0c0()
             {
                 cout << "Invalid response." << endl;
             }
-            
+
             cout << "You see a gold plated book on a pedestal; it looks special. Do you want to read it? (YES/NO)" << endl;
             cin >> response;
             if(response == "Yes" || response == "YES" || response == "yes")
@@ -684,7 +686,7 @@ void r0c0()
         {
             cout << heroName << " -- 'This altar is really creepy...like some sort of torture device...'" << endl;
             cout << endl; //for spacing
-            
+
             cout << "You see a large gemstone covered in blood. Do you want to take it? (YES/NO)" << endl;
             cin >> response;
             if(response == "Yes" || response == "YES" || response == "yes")
@@ -700,7 +702,7 @@ void r0c0()
             {
                 cout << "Invlaid response." << endl;
             }
-            
+
             cout << "You see a gold plated book on a pedestal; it looks special. Do you want to read it? (YES/NO)" << endl;
             cin >> response;
             if(response == "Yes" || response == "YES" || response == "yes")
@@ -722,7 +724,7 @@ void r0c0()
             cout << heroName << " -- 'I can't believe that a satanic cult worshipped in a coal mine for almost 3 years without any of the workers noticing..." << endl;
             cout << "And practiced virgin sacrifice?!?! That's just all kinds of messed up...'" << endl;
             cout << endl; //for spacing
-            
+
             cout << "You see a large gemstone covered in blood. Do you want to take it? (YES/NO)" << endl;
             cin >> response;
             if(response == "Yes" || response == "YES" || response == "yes")
@@ -738,7 +740,7 @@ void r0c0()
             {
                 cout << "Invalid response." << endl;
             }
-            
+
             cout << "Would you like to read the cultist book agin? (YES/NO)" << endl;
             cin >> response;
             if(response == "Yes" || response == "YES" || response == "yes")
@@ -758,7 +760,7 @@ void r0c0()
         {
             cout << heroName << " -- 'To be honest, this blood diamond thing is kinda gross...'" << endl;
             cout << endl; //for spacing
-            
+
             cout << "You see a gold plated book on a pedestal; it looks special. Do you want to read it? (YES/NO)" << endl;
             cin >> response;
             if(response == "Yes" || response == "YES" || response == "yes")
@@ -779,7 +781,7 @@ void r0c0()
         {
             cout << heroName << " -- 'It's crazy all the rituals and shit that went on in this room..." << endl;
             cout << endl; //for spacing
-            
+
             cout << "Would you like to read the cultist book again? (YES/NO)" << endl;
             cin >> response;
             if(response == "Yes" || response == "YES" || response == "yes")
@@ -795,7 +797,7 @@ void r0c0()
                 cout << "Invalid response." << endl;
             }
         }
-        
+
         r0c0(); //altar room
     }
     else if(command == "Use" || command == "USE" || command == "use")
@@ -1130,14 +1132,14 @@ void r0c6()
     //miners must have sometimes used crowbar to get barrels open
     //get crowbar if not already have the other one
     //if have other one, oh look another crowbar...
-    
+
 }
 
 
 
 void r0c7()
 {
-    cin << command;
+    cin >> command;
     if(command == "Help" || command == "HELP" || command == "help")
     {
         HELP();
@@ -1194,7 +1196,7 @@ void r0c7()
 
 void r0c8()
 {
-    cin << command;
+    cin >> command;
     if(command == "Help" || command == "HELP" || command == "help")
     {
         HELP();
@@ -1213,7 +1215,7 @@ void r0c8()
     else if(command == "Search" || command == "SEARCH" || command == "search")
     {
         cout << heroName << " -- 'There's a HUGE fracture in the gound here; it continues south of here." << endl;
-        cout << "The lighting isnt good here...I can't see the other side.'"
+        cout << "The lighting isnt good here...I can't see the other side.'";
         r0c8();
     }
     else if(command == "Use" || command == "USE" || command == "use")
@@ -1305,7 +1307,7 @@ void r0c9()
 
 void r0c10()
 {
-    cin << command;
+    cin >> command;
     if(command == "Help" || command == "HELP" || command == "help")
     {
         HELP();
@@ -1447,14 +1449,14 @@ void r0c12()
     else
     {
         cout << "Invalid command." << endl;
-    } 
+    }
 }
 
 
 //row 1
 void r1c0()
 {
-    cin << command;
+    cin >> command;
     if(command == "Help" || command == "HELP" || command == "help")
     {
         HELP();
@@ -1511,7 +1513,7 @@ void r1c0()
 
 void r1c1()
 {
-    cin << command;
+    cin >> command;
     if(command == "Help" || command == "HELP" || command == "help")
     {
         HELP();
@@ -1605,7 +1607,7 @@ void r1c2()
         }
         cout << "There is nothing useful in this room." << endl;
         cout << endl; //for spacing
-        r1c2(); //spawn point 
+        r1c2(); //spawn point
     }
     else if(command == "Use" || command == "USE" || command == "use")
     {
@@ -1643,7 +1645,7 @@ void r1c2()
 
 void r1c3()
 {
-    cin << command;
+    cin >> command;
     if(command == "Help" || command == "HELP" || command == "help")
     {
         HELP();
@@ -1700,7 +1702,7 @@ void r1c3()
 
 void r1c4()
 {
-    cin << command;
+    cin >> command;
     if(command == "Help" || command == "HELP" || command == "help")
     {
         HELP();
@@ -1906,7 +1908,7 @@ void r1c7()
     else
     {
         cout << "Invalid command." << endl;
-    } 
+    }
 }
 
 
@@ -2740,7 +2742,7 @@ void r2c12()
     else
     {
         cout << "Invalid command." << endl;
-    } 
+    }
 }
 
 
@@ -4681,7 +4683,7 @@ void r6c2()
     //horrified by what he saw, he stumbled back to his sleeping bag by the minecarts and recorded what he witnessed.
     //when jones told us what had happened, none of us believed him, but when he showed us the altar...we believed him...
     //so we stole thier dagger so that it would make it more difficult to "properly" sacrifice innocent people.
-    
+
 }
 
 
@@ -6338,5 +6340,5 @@ void r8c12()
     else
     {
         cout << "Invalid command." << endl;
-    } 
+    }
 }
