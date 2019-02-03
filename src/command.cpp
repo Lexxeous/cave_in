@@ -373,11 +373,11 @@ void CULTISTBOOK()
     cout << "|                                               \\   |" << endl;
     cout << "|                                                \\  |" << endl;
     cout << "|                                                  \\|" << endl;
-    cout << "|                                                   |" << endl; //how to perform sacrifice, etc...
-    cout << "|                                                   |" << endl;
-    cout << "|                                                   |" << endl;
-    cout << "|                                                   |" << endl;
-    cout << "|                                                   |" << endl;
+    cout << "|                                                   |" << endl; // how to perform sacrifice, etc...
+    cout << "|                                                   |" << endl; // this dagger is blessed by our
+    cout << "|                                                   |" << endl; // master, there is none other
+    cout << "|                                                   |" << endl; // that we posses can properly satisfy
+    cout << "|                                                   |" << endl; // his thirst for blood
     cout << "|                                                   |" << endl;
     cout << "|                                                   |" << endl;
     cout << "|                                                   |" << endl;
@@ -408,12 +408,12 @@ void CULTISTBOOK()
     cout << "|                                                  \\ " << endl; //we were supposed to do a virgin sacrifice tommorow
     cout << "|                                                   |" << endl; //but i suppose revenge on our ememies will do.
     cout << "|                                                   |" << endl; //we do not know exaclty when the dagger was stolen
-    cout << "|                                                   |" << endl; //we could have gone days without noticing it
+    cout << "|                                                   |" << endl; //we could have gone days without noticing it...
     cout << "|                                                   |" << endl; //need acts of revenge against the inbreds that stole the holy dagger
-    cout << "|                                                   |" << endl; //until it's retrieved, we can no longer rip flesh in Your name
+    cout << "|                                                   |" << endl; //until it's retrieved, we can no longer rip flesh in His name
     cout << "|                                                   |" << endl;
     cout << "|                                                   |" << endl; //until every soul here is taken for Your glory, we will not stop.
-    cout << "|                                                   |" << endl;
+    cout << "|                                                   |" << endl; //so our decendents can know our tale:
     cout << "|                   _____________                   |" << endl; //there will be a scout here at all times, waiting for one of them
     cout << "|                  /\\ \\       / /\\                  |" << endl; //to fuck up. Then is our perfect time to act.
     cout << "|                 /  \\   \\ /   /  \\                 |" << endl;
@@ -499,7 +499,8 @@ void MINERNOTE()
 void MINERSNOTE()
 {
     cout << " ___________________________________________________ " << endl; //something about jones' witness story
-    cout << "| March 24, 1960                                    |" << endl; //them not knowing what to do and then taking action by stealing the dagger
+    cout << "| March 24, 1960                                    |" << endl; //them not knowing what to do and then
+    cout << "|                                                   |" << endl; //taking action by stealing the dagger
     cout << "|                                                   |" << endl;
     cout << "|                                                   |" << endl;
     cout << "|                                                   |" << endl;
@@ -514,9 +515,8 @@ void MINERSNOTE()
     cout << "|                                                   |" << endl;
     cout << "|                                                   |" << endl;
     cout << "|                                                   |" << endl;
-    cout << "|                                                   |" << endl;
-    cout << "|                                                   |" << endl; //we hid the key far away from the lock box in hopes that they wouldnt find it
-    cout << "|                                                   |" << endl;
+    cout << "|                                                   |" << endl; //we hid the key far away from the lock box
+    cout << "|                                                   |" << endl; //in hopes that they wouldnt find it
     cout << "|                                                   |" << endl;
     cout << "|                                                   |" << endl;
     cout << "|                                                   |" << endl;
