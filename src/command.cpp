@@ -532,10 +532,10 @@ void MINERSNOTE()
 void intro()
 {
     cout << heroName << " -- 'Oooohhh... my... h-head. I must have hit it on a rock on the way down... Gggahhh..."
-        << " W-well, at least I didn't break anything...b-but how the hell am I gunna get outta here?!"
-        << " I gotta... aahhh... find my f-friends!!!"
-        << " Looks like some of these old, crude electric lamps are s-still functinal...*sigh*...let's see"
-        << " if I can find anything useful in this crap-hole...'" << endl;
+    << " W-well, at least I didn't break anything...b-but how the hell am I gunna get outta here?!"
+    << " I gotta... aahhh... find my f-friends!!!"
+    << " Looks like some of these old, crude electric lamps are s-still functinal...*sigh*...let's see"
+    << " if I can find anything useful in this crap-hole...'" << endl;
     cout << "Press ENTER to continue..." << endl;
     getchar(); //pause
     cout << "At any time during the game, enter the command 'HELP' to bring up the guidence menu." << endl;
